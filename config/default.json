@@ -1,0 +1,9 @@
+{
+    "esdras": {
+        "dbConfig": {
+            "host" : "localhost",
+            "port" : 5984,
+            "dbName": "mongodb+srv://esdras:emcg88222764@webproject.gc5tq.mongodb.net/myFirstDatabase?retryWrites=true&w=majority"
+        }
+    }
+}
