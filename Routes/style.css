@@ -17,4 +17,24 @@ body {
   justify-content: space-between;
 }
 
+main {
+  display: grid;
+  place-content: center;
+  text-align: center;
+}
+
+main select {
+  margin: 20px 0;
+}
+
+main button {
+  width: 50%;
+  margin: 5px auto;
+}
+
+#add-wrapper div {
+  display: flex;
+  justify-content: space-between;
+  margin: 5px 0;
+}
 
