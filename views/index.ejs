@@ -1,0 +1,38 @@
+<!-- index.ejs -->
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<title>Contacts</title>
+	</head>
+	<body>
+		<h1>Contacts</h1>
+		<form action="/contacts" method="POST">
+			<input type="text" placeholder="name" name="name" />
+			<input type="text" placeholder="number" name="number" />
+			<button type="submit">Submit</button>
+		</form>
+		<h2>Contacts list</h2>
+		<ul class="contacts">
+			<!-- Loop through contacts -->
+			<% for(var i = 0; i < contacts.length; i++) {%>
+			<li class="contact">
+				<!-- Output name from the iterated contact object -->
+				<span><%= contacts[i].name %></span>:
+				<!-- Output contact from the iterated contact object -->
+				<span><%= contacts[i].number %></span>
+			</li>
+			<% } %>
+		</ul>
+		<p>Rendered contacts with EJS.</p>
+		<div>
+			<h2>Update contacts</h2>
+			<button id="update-button">Update</button>
+		</div>
+    <div>
+      <h2>Delete contacts</h2>
+      <button id="delete-button">Delete</button>
+    </div>
+		<script src="/main.js"></script>
+	</body>
+</html>
